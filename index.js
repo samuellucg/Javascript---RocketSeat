@@ -21,14 +21,31 @@ console.log(arrayzin[2] + " " + arrayzin[0])
 let objeto_1 = {
     value: 'ler um livro por mês!',
     checked: false,
-    pior: "sim"
+    pior: "sim",
+    // arrow function abaixo:
+    log: (sla) => {
+        console.log(sla)
+    }
 }
+objeto_1.log("oi") // você pode executar o objeito mais algo que está lá dentro como a função log.
+
 console.log(objeto_1.pior) // você pode dar .alguma coisa q está no objeto como value,checked e etc.
 
-// arrow function
+// para declarar uma function existem dois mêtodos:
 
-const criarMeta = (parametros) => {
-    console.log(parametros)
+// arrow function: 
+
+// let/const nome_da_function = (algum parametro) => {função a ser escrita aqui:}
+
+// ou 
+
+// named function:
+
+// function nome_Da_variavel() {}
+
+// exemplo de named functions
+
+function cumprimento(msg) {
+    console.log(msg)
 }
-
-// function
+console.log(cumprimento("Olá" +" " + nome))
